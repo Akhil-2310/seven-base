@@ -1,0 +1,20 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjc1NDk1NCwidHlwZSI6ImF1dGgiLCJrZXkiOiIweDcyYTUwRTA3Qjg1MmE2MGM2ZUVkM2Y5YTBDREYyNmQxOGU4RTBlQWQifQ",
+    "payload": "eyJkb21haW4iOiJzZXZlbi1iYXNlLnZlcmNlbC5hcHAifQ",
+    "signature": "Zsizg1QlxS1Q6sw65wzL4I8pFMrytIS2hNiioUDhu3IG5hDBwEpAZ+rRUJ4XgjVH1Hdb0XCTY0ker1R/pYFCshw="
+  },
+  "miniapp": {
+    "name": "seven-base",
+    "version": "1",
+    "iconUrl": "https://seven-base.vercel.app/icon.png",
+    "homeUrl": "https://seven-base.vercel.app",
+    "imageUrl": "https://seven-base.vercel.app/image.png",
+    "splashImageUrl": "https://seven-base.vercel.app/splash.png",
+    "splashBackgroundColor": "#ffffff",
+    "webhookUrl": "https://seven-base.vercel.app/api/webhook",
+    "subtitle": "seven-base",
+    "description": "fun dice game",
+    "primaryCategory": "games"
+  }
+}

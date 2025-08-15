@@ -6,9 +6,18 @@ import LoginCard from "./components/login-card";
 import Header from "./components/header";
 import LearnMore from "./components/learn-more";
 import SevenUpDownGame from "./components/sevenupdowngame";
+import { useEffect } from "react";
+import { sdk } from '@farcaster/miniapp-sdk'
 
 export default function Home() {
   const signerStatus = useSignerStatus();
+
+  useEffect(() => {
+async function initFarcaster() {
+  await sdk.actions.ready()
+}
+initFarcaster();
+  },[])
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/30">

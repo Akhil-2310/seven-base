@@ -3,8 +3,9 @@ import {
   cookieStorage,
   createConfig,
 } from "@account-kit/react";
-import { alchemy, monadTestnet } from "@account-kit/infra";
+import { alchemy, monadTestnet, baseSepolia } from "@account-kit/infra";
 import { QueryClient } from "@tanstack/react-query";
+// import { baseSepolia } from "viem/chains";
 // import { monadTestnet } from "viem/chains";
 
 const API_KEY = process.env.NEXT_PUBLIC_ALCHEMY_API_KEY;
@@ -34,7 +35,7 @@ export const config = createConfig(
   {
     transport: alchemy({ apiKey: "kgzZuD1mIGAsUtjylIbm9" }),
     // Note: This quickstart is configured for Arbitrum Sepolia.
-    chain: monadTestnet,
+    chain: baseSepolia,
     ssr: true, // more about ssr: https://www.alchemy.com/docs/wallets/react/ssr
     storage: cookieStorage, // more about persisting state with cookies: https://www.alchemy.com/docs/wallets/react/ssr#persisting-the-account-state
     enablePopupOauth: true, // must be set to "true" if you plan on using popup rather than redirect in the social login flow

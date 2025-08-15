@@ -1,7 +1,7 @@
 import { parseAbi } from "viem";
 
 // Seven Up Down Game Contract Configuration
-export const GAME_CONTRACT_ADDRESS = "0xB6B9918C5880f7a1A4C65c4C4B6297956B4c39AD"; // Will be updated after deployment
+export const GAME_CONTRACT_ADDRESS = "0x0E41F6B3841252978057Ed9088E2Fa67E238aCE7"; // Will be updated after deployment
 
 // Seven Up Down Game Contract ABI
 export const GAME_ABI_PARSED = parseAbi([
